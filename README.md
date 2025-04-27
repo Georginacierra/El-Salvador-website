@@ -1,2 +1,2 @@
-# El-Salvador-website
+# Salvador-website
 Projet b-tech, Website Salvador
