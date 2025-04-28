@@ -1,13 +1,17 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Overpass;
+    font-family: Overpass, Arial;
     box-sizing: border-box;
 }
 
 body{
     width: 100vw;
+    overflow-x: hidden;
 }
+
+
+/* ACCUEIL */
 
 
 nav{
@@ -26,8 +30,8 @@ nav a{
 }
 
 #logo-white{
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
     margin: 0 20px;
 }
 
@@ -43,7 +47,6 @@ li{
     align-items: center;
 }
 
-
 #volcane-photo{
     width: 100%;
     position: relative;
@@ -57,11 +60,13 @@ li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 #logo-green{
-    width:300px;
-    height: 300px;
+    width:350px;
+    height: 350px;
     animation-name: logo-appear;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
@@ -118,15 +123,18 @@ a{
     align-items: center;
  }
 
+/* BUTTONS */
+
 .green-button{
     background-color: #384001;
     padding: 23px 20px ;
     border-radius: 20px;
     color: #FFFFFF;
     transition: all;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
     transition-timing-function: linear;
     height: fit-content;
+    font-size: 24PX;
 }
 
 .green-button:hover{
@@ -143,7 +151,9 @@ a{
     /* transform a for the buttons, display block */
     width: fit-content;
     transition: all;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
+    font-size: 24PX;
+    font-weight: bold;
 }
 
 .transparent-button:hover{
@@ -151,6 +161,21 @@ a{
     color: #FFFFFF;
 }
 
+.button-text{
+    color: #EBF0F5;
+    font-size: 28px;
+    text-decoration: underline;
+    text-align: center;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.button-text:hover{
+    color: #a4cef3;
+}
+
+/* FONTS CLASS */
 
 .h2-green{ 
     font-family: Lilita One;
@@ -158,6 +183,52 @@ a{
     text-align: center;
     color: #222601;
     font-weight: 200;
+}
+
+.h2-white{ 
+    font-family: Lilita One;
+    font-size: 46px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+.h3-green-card{ 
+    font-family: Lilita One;
+    font-size: 46px;
+    text-align: center;
+    color: #222601;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.h3-green{ 
+    font-family: Lilita One;
+    font-size: 36px;
+    text-align: center;
+    color: #222601;
+    font-weight: 200;
+}
+
+.h3-white{ 
+    font-family: Lilita One;
+    font-size: 36px;
+    text-align: center;
+    color:#EBF0F5;
+    font-weight: 200;
+}
+
+.h4-noir{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 18px;
+}
+
+.h4-white{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px;
+    color: #FFFFFF;
 }
 
 .font-normal{
@@ -177,27 +248,11 @@ a{
     color: white;
 }
 
-
 .font-bold{
     font-size: 24px;
     font-weight: bold;
 }
 
-.h3-green{ 
-    font-family: Lilita One;
-    font-size: 36px;
-    text-align: center;
-    color: #222601;
-    font-weight: 200;
-}
-
-.h3-white{ 
-    font-family: Lilita One;
-    font-size: 36px;
-    text-align: center;
-    color:#EBF0F5;
-    font-weight: 200;
-}
 
 #objetive-website{
     background-color: #EBF0F5;
@@ -219,7 +274,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 0;
+    padding: 80px 0;
 }
 
 #cards{
@@ -227,6 +282,7 @@ a{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 20px 0;
 }
 
 .box-info{
@@ -241,7 +297,7 @@ a{
     align-items: center;
     margin: 50px;
     transition: all;
-    transition-duration: 0.8s;
+    transition-duration: 0.5s;
 }
 
 .box-info:hover{
@@ -249,24 +305,6 @@ a{
     background-color: #0C375D;
     color: #EBF0F5;
 }
-
-.button-text{
-    color: #EBF0F5;
-    font-size: 24px;
-    text-decoration: underline;
-    text-align: center;
-    transition: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-}
-
-.button-text:hover{
-    color: #061E33;
-    font-size: 24px;
-    text-decoration: underline;
-    text-align: center;
-}
-
 
 #banner-info{
     background-color: #EBF0F5;
@@ -284,11 +322,98 @@ a{
 #text-info{
     height: 300px;
     align-content: center;
-    /* new propertie instead ot flex */
+    /* new propertie instead ot flex for texts*/
     a{
         margin: 20px auto;
     }
 }
+
+/* DEOUVRIR page*/
+
+#banner-2-decouvrir h2{
+    animation-name: title-appear;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in;
+}
+
+.card-left{
+    background-color: #EBECDE;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+.card-right{
+    background-color: #EBECDE;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 60px;
+}
+
+.card-photo{
+    width: 400px;
+    transition: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+.card-photo:hover{
+    transform: scale(0.9);
+}
+
+.card-content{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#banner-2-decouvrir{
+    background-image: url(/photos/banner-2-photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    padding: 40px;
+    height: 300px;
+}
+
+#banner-2-green{
+    background: #384001;
+    padding: 30px;
+    text-align: center;
+}
+
+#infos-practiques{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px; 
+    padding-left: 30px;
+
+}
+
+#sub-section1-infos{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#sub-section2-infos{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-bleu{
+    width: 90px;
+    height: 90px;
+}
+
+/*INFOS-PRACTIQUES*/
+
+/* FOOTER */
 
 footer{
     background-color: #222601;
