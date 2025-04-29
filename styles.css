@@ -13,7 +13,6 @@ body{
 
 /* ACCUEIL */
 
-
 nav{
     background-color: #222601;
     display: flex;
@@ -35,13 +34,6 @@ nav a{
     margin: 0 20px;
 }
 
-.logo-white-footer{
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-}
-
-
 li{
     list-style: none;
     padding: 20px;
@@ -57,11 +49,6 @@ li{
     text-decoration: underline;
 }
 
-.font-nav:active{
-    background-color: #FFFFFF;
-    color: #1E1E1E;
-}
-
 /* pending working in the active menu, css */
 /* pending flat-icon */
 
@@ -69,11 +56,6 @@ li{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-#volcane-photo{
-    width: 100%;
-    position: relative;
 }
 
 #banner-volcane{
@@ -470,6 +452,12 @@ footer{
     padding: 20px;
 }
 
+.logo-white-footer{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
 .icon{
     width: 70px;
     height: 70px;
@@ -480,6 +468,12 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.logo-white-footer{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
 }
 
 #footer-mentions{
@@ -574,3 +568,183 @@ height: 300px;
 }
 
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+/* ACCUEIL MOBILE */
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    a.font-nav{
+        font-size: 16px;
+    }
+    
+    #logo-white{
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+    
+    #logo-green{
+        width:200px;
+        height: 200px;
+    }
+
+    #welcome-banner{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .content-welcome{
+        margin: 20px 0;
+    }
+
+    .CTA-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .green-button{
+        background-color: #384001;
+        padding: 13px 10px ;
+        border-radius: 8px;
+        color: #FFFFFF;
+        font-size: 18PX;
+    }
+
+    .transparent-button{
+        padding: 10px 28px;
+        border: 5px solid #187CD3;
+        color: #187CD3;
+        border-radius: 8px;
+        margin:20px;
+        font-size: 20PX;}
+
+        .button-text{
+            color: #EBF0F5;
+            font-size: 20px;
+            text-decoration: underline;
+            text-align: center;
+            transition: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+        }
+
+    #objetive-website{
+        background-color: #EBF0F5;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        }
+
+    .content-objetive{
+        padding: 20px 20px;
+    }
+    /* FONTS CLASS */
+
+.h2-green{ 
+    font-size: 32px;
+}
+
+.h3-green{ 
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.font-normal{
+    font-size: 18px;
+    margin:10px;
+}
+
+.h3-white{ 
+    font-size: 28px;
+}
+
+.font-normal-white-footer{
+    font-size: 16px;
+    text-align: center;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-info{
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+}
+
+#banner-info{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.big-photo{
+    width: 100%;
+    height: auto;
+}
+
+#text-info{
+    padding: 0 20px;
+    align-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-white-footer{
+    margin: 10px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+#footer-mentions{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+}
+
+/* DECOUVRIR PAGE */
+
+
+
+}
+
+    /* BREAKPOUNTS STANDARS
+    LARGEUR EXEMPLES
+    320PX-480PX MOBILES
+    481PX-768PX TABLETTES
+    769PX-1024PX ORDI PORTABLES, PETITS ÉCRANS
+    1025PX-1200PX ORDI FIXE, GRANDS ÉCRANS
+    1201 PX OU PLUS TV, ÉCRANS, EXTRA-LARGES  */
