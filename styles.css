@@ -10,7 +10,6 @@ body{
     overflow-x: hidden;
 }
 
-
 /* ACCUEIL */
 
 nav{
@@ -36,7 +35,7 @@ nav a{
 
 li{
     list-style: none;
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 .font-nav{
@@ -47,6 +46,27 @@ li{
 
 .font-nav:hover{
     text-decoration: underline;
+}
+
+#accueil-menu{
+    background-color: #EBECDE;
+    color: #222601;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#decouvrir-menu{
+    background-color: #EBECDE;
+    color: #222601;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#infos-menu{
+    background-color: #EBECDE;
+    color: #222601;
+    padding: 10px 20px;
+    border-radius: 8px; 
 }
 
 /* pending working in the active menu, css */
@@ -62,6 +82,8 @@ li{
     background-image: url("/photos/banner\ photo.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    align-content: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -99,6 +121,13 @@ li{
 
 a{
     text-decoration: none;
+}
+
+#accueil-menu{
+    background-color: #EBECDE;
+    color: #222601;
+    padding: 6px 10px;
+    border-radius: 8px;
 }
 
 #welcome-banner h2{
@@ -239,7 +268,7 @@ a{
 
 .font-normal{
     font-size: 24px;
-    margin: 15px;
+    margin: 16px;
 }
 
 .font-normal-white{
@@ -261,11 +290,10 @@ a{
 }
 
 .font-bold-big{
-    font-size: 32px;
+    font-size: 34px;
     font-weight: bold;
     margin: 15px;
 }
-
 
 #objetive-website{
     background-color: #EBF0F5;
@@ -274,6 +302,10 @@ a{
     justify-content: center;
     align-items: center;
     padding: 50px 80px;
+}
+
+.content-objetive{
+    padding: 80px 150px;
 }
 
 .photo-small{
@@ -335,6 +367,7 @@ a{
 #text-info{
     height: 300px;
     align-content: center;
+    padding: 0 120px;
     /* new propertie instead ot flex for texts*/
     a{
         margin: 20px auto;
@@ -366,7 +399,7 @@ a{
 
 #photo-card-plage {
     background-image: url(/photos/surf-city-photo.png);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 20%;
@@ -398,6 +431,7 @@ a{
     background-image: url(/photos/banner-2-photo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     align-content: center;
     padding: 40px;
     height: 300px;
@@ -416,7 +450,6 @@ a{
     align-items: center;
     padding-bottom: 60px; 
     padding-left: 30px;
-
 }
 
 #sub-section1-infos{
@@ -573,7 +606,7 @@ height: 300px;
     nav{
         display: flex;
         flex-direction: column;
-        height: 250px;
+        height: 300px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -588,6 +621,30 @@ height: 300px;
         height: 150px;
         margin: 0;
     }
+
+    li{
+        list-style: none;
+        padding: 8px;
+    }
+
+    #menu-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #accueil-menu{
+        padding: 6px 10px;
+    }
+    
+    #decouvrir-menu{
+        padding: 6px 10px;
+    }
+    
+    #infos-menu{
+        padding: 6px 10px;
+    }
+
     
     #logo-green{
         width:200px;
@@ -595,8 +652,6 @@ height: 300px;
     }
 
     #welcome-banner{
-        padding: 10px;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -658,6 +713,10 @@ height: 300px;
     font-size: 32px;
 }
 
+.h2-white{ 
+    font-size: 32px;
+}
+
 .h3-green{ 
     font-size: 28px;
     margin-top: 20px;
@@ -669,12 +728,33 @@ height: 300px;
 }
 
 .h3-white{ 
-    font-size: 28px;
+    font-size: 26px;
+}
+
+.h4-noir{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 18px;
+}
+
+.h4-white{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    color: #FFFFFF;
 }
 
 .font-normal-white-footer{
     font-size: 16px;
     text-align: center;
+}
+
+.font-bold{
+    font-size: 20px;
+}
+
+.font-bold-big{
+    font-size: 24px;
 }
 
 #cards{
@@ -701,7 +781,7 @@ height: 300px;
 }
 
 #text-info{
-    padding: 0 20px;
+    padding: 0 10px;
     align-content: center;
 }
 
@@ -738,6 +818,110 @@ footer{
 /* DECOUVRIR PAGE */
 
 
+.card-left{
+    background-color: #EBECDE;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+
+.card-right{
+    background-color: #EBECDE;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+
+#photo-card-plage {
+    height: 200px;
+    width: auto;
+}
+
+#photo-card-volcan {
+    height: 200px;
+    width: auto;
+}
+
+#photo-card-maya{
+    height: 200px;
+    width: auto;
+}
+
+
+.card-content{
+    padding-left: 20px;
+    padding: 20px;
+    width: auto;
+    height: 80%;
+}
+
+#banner-2-green{
+    background: #384001;
+    padding: 30px;
+    align-content: center;
+    height: 250px;
+    margin-bottom: 60px;
+}
+
+#infos-practiques{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+#sub-section1-infos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#sub-section2-infos{
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* INFOS PRACTIQUES */
+
+#banner-prepare-ton-voyage{
+    background-image: url(/photos/photo-banner3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 600px;
+    }
+
+#banner-2-bleu{
+    height: 180px;
+    margin-bottom: 0px;
+}
+
+.card-check-box{
+    margin: 20px;
+}
+
+#contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-photo{
+    width: 100px;
+    height: 100px;
+    margin-right: 0px;
+}
 
 }
 
