@@ -176,6 +176,40 @@ a{
     background-color: #808F15;
 }
 
+.green-button-animated{
+    background-color: #384001;
+    padding: 23px 20px ;
+    border-radius: 20px;
+    color: #FFFFFF;
+    height: fit-content;
+    font-size: 24PX;
+    animation-name: animated-button;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: ease;
+    transition: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes animated-button{
+    0%{
+        filter: brightness(50%);
+    }
+    50%{
+        filter: brightness(1.75);
+    }
+    100%{
+        filter: brightness(1);
+    }
+}
+
+.green-button-animated:hover{
+    transform: scale(1.1);
+}
+
+
+
 .transparent-button{
     padding: 20px 30px;
     border: 5px solid #187CD3;
@@ -213,7 +247,7 @@ a{
 /* FONTS CLASS */
 
 .h2-green{ 
-    font-family: Lilita One;
+    font-family: Lilita One, Helvetica;
     font-size: 46px;
     text-align: center;
     color: #222601;
@@ -221,7 +255,7 @@ a{
 }
 
 .h2-white{ 
-    font-family: Lilita One;
+    font-family: Lilita One, Helvetica;
     font-size: 46px;
     text-align: center;
     color: #FFFFFF;
@@ -229,7 +263,7 @@ a{
 }
 
 .h3-green-card{ 
-    font-family: Lilita One;
+    font-family: Lilita One, Helvetica;
     font-size: 46px;
     text-align: center;
     color: #222601;
@@ -238,7 +272,7 @@ a{
 }
 
 .h3-green{ 
-    font-family: Lilita One;
+    font-family: Lilita One, Helvetica;
     font-size: 36px;
     text-align: center;
     color: #222601;
@@ -246,7 +280,7 @@ a{
 }
 
 .h3-white{ 
-    font-family: Lilita One;
+    font-family: Lilita One, Helvetica;
     font-size: 36px;
     text-align: center;
     color:#EBF0F5;
@@ -374,13 +408,57 @@ a{
     }
 }
 
-/* DEOUVRIR page*/
+/* DECOUVRIR page*/
+
+#banner-2-decouvrir{
+    background-image: url(/photos/banner-2-photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    padding: 40px;
+    height: 300px;
+}
 
 #banner-2-decouvrir h2{
     animation-name: title-appear;
     animation-duration: 1.2s;
     animation-timing-function: ease-in;
+    padding: 0 30px;
 }
+
+#banner-2-green{
+    background: #384001;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+#text-slider{
+    display: flex;
+    flex-direction: column;
+    animation-name: scroll-banner;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
+}
+
+#text-slider .h4-white{
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes scroll-banner {
+    0% { transform: translateY(0px);}
+    100% {transform: translateY(-300px);}
+}
+
 
 .card-left{
     background-color: #EBECDE;
@@ -425,22 +503,6 @@ a{
     padding-left: 20px;
     padding: 20px;
     width: 80%;
-}
-
-#banner-2-decouvrir{
-    background-image: url(/photos/banner-2-photo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-content: center;
-    padding: 40px;
-    height: 300px;
-}
-
-#banner-2-green{
-    background: #384001;
-    padding: 30px;
-    text-align: center;
 }
 
 #infos-practiques{
@@ -598,6 +660,40 @@ height: 300px;
     width: 140px;
     height: 140px;
     margin-right: 10px;
+    transition: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+.contact-photo:hover{
+transform: scale(1.2);   
+}
+
+/* MENTIONS */
+
+#mentions{
+    background-color: #EBECDE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre-mentions{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#mentions-content{
+    padding: 50px;
+}
+
+.list-mentions{
+    padding: 0 50px;
+}
+
+.list-mentions li{
+    list-style: square;
 }
 
 
@@ -817,6 +913,10 @@ footer{
 
 /* DECOUVRIR PAGE */
 
+#banner-2-decouvrir{
+    height: 400px;
+}
+
 
 .card-left{
     background-color: #EBECDE;
@@ -849,7 +949,6 @@ footer{
     width: auto;
 }
 
-
 .card-content{
     padding-left: 20px;
     padding: 20px;
@@ -857,18 +956,12 @@ footer{
     height: 80%;
 }
 
-#banner-2-green{
-    background: #384001;
-    padding: 30px;
-    align-content: center;
-    height: 250px;
-    margin-bottom: 60px;
-}
-
 #infos-practiques{
     display: flex;
     flex-direction: column;
-    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
 }
 
 #sub-section1-infos{
@@ -883,6 +976,12 @@ footer{
 #sub-section2-infos{
     width: 100%;
     margin: 20px 0;
+}
+
+.green-button-animated{
+    padding: 15px 16px ;
+    border-radius: 10px;
+    font-size: 18PX;
 }
 
 /* INFOS PRACTIQUES */
@@ -922,6 +1021,7 @@ footer{
     height: 100px;
     margin-right: 0px;
 }
+
 
 }
 
