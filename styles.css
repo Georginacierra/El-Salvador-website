@@ -993,11 +993,7 @@ footer{
 /* INFOS PRACTIQUES */
 
 #banner-prepare-ton-voyage{
-    background-image: url(./photos/photo-banner3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    height: 600px;
+    height: 300px;
     }
 
 #banner-2-bleu{
