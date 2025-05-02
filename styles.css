@@ -79,7 +79,7 @@ li{
 }
 
 #banner-volcane{
-    background-image: url("/photos/banner\ photo.png");
+    background-image: url("./photos/banner\ photo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -411,7 +411,7 @@ a{
 /* DECOUVRIR page*/
 
 #banner-2-decouvrir{
-    background-image: url(/photos/banner-2-photo.png);
+    background-image: url(./photos/banner-2-photo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -476,7 +476,7 @@ a{
 
 
 #photo-card-plage {
-    background-image: url(/photos/surf-city-photo.png);
+    background-image: url(./photos/surf-city-photo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -484,7 +484,7 @@ a{
 }
 
 #photo-card-volcan {
-    background-image: url(/photos/volcan-photo.png);
+    background-image: url(./photos/volcan-photo.png);
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -492,7 +492,7 @@ a{
 }
 
 #photo-card-maya{
-    background-image: url(/photos/site-archeologique-photo.png);
+    background-image: url(./photos/site-archeologique-photo.png);
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -589,7 +589,7 @@ footer{
 
 
 #banner-prepare-ton-voyage{
-background-image: url(/photos/photo-banner3.png);
+background-image: url(./photos/photo-banner3.png);
 background-repeat: no-repeat;
 background-size: cover;
 align-items: center;
@@ -697,7 +697,7 @@ transform: scale(1.2);
 }
 
 
-@media only screen and (min-width:320px) and (max-width:480px) {
+@media only screen and (max-width:480px) {
 /* ACCUEIL MOBILE */
     nav{
         display: flex;
@@ -798,6 +798,12 @@ transform: scale(1.2);
         justify-content: center;
         align-items: center;
         padding: 0;
+        }
+    
+        .photo-small{
+            width: 100%;
+            height: auto;
+            border-radius: 0px;
         }
 
     .content-objetive{
@@ -987,7 +993,7 @@ footer{
 /* INFOS PRACTIQUES */
 
 #banner-prepare-ton-voyage{
-    background-image: url(/photos/photo-banner3.png);
+    background-image: url(./photos/photo-banner3.png);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
