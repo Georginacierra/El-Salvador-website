@@ -96,7 +96,7 @@ li{
     width:350px;
     height: 350px;
     animation-name: logo-appear;
-    animation-duration: 1.5s;
+    animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
 }
@@ -132,7 +132,7 @@ a{
 
 #welcome-banner h2{
     animation-name: title-appear;
-    animation-duration: 1.5s;
+    animation-duration: 0.8s;
     animation-timing-function: ease-in;
 }
 
@@ -422,7 +422,7 @@ a{
 
 #banner-2-decouvrir h2{
     animation-name: title-appear;
-    animation-duration: 1.2s;
+    animation-duration: 0.8s;
     animation-timing-function: ease-in;
     padding: 0 30px;
 }
