@@ -1,171 +1,261 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Site web, guide pratique et culturel sur Salvador pour les francophones">
-    <meta name="keywords" content="HTML, CSS, France, Belgique, Suisse, Canada, Salvador, voyage, visit, francophones">
-    <meta name="author" content="Georgina Cierra">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Site web, guide pratique et culturel sur Salvador pour les francophones"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, France, Belgique, Suisse, Canada, Salvador, voyage, visit, francophones"
+    />
+    <meta name="author" content="Georgina Cierra" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>decouvrir Salvador site</title>
 
     <!-- google fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=east"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Overpass:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=east"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Overpass:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- FLAVICON -->
-<link rel="icon" href="./public/favicon.ico" type="image/x-icon"/>
+    <!-- FLAVICON -->
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon" />
 
-<!-- my css -->
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
-    <nav>
-        <img src="./photos/logo white.png" alt="Logo white by Georgina" id="logo-white">
-        <ul id="menu-nav">
-            <li><a href="./index.html" class="font-nav">Accueil</a></li>
-            <li><a href="./Decouvrir.html" class="font-nav" id="accueil-menu">Découvrir le Salvador</a></li>
-            <li><a href="./infos-practiques.html" class="font-nav">Infos pratiques</a></li>
-        </ul>
+    <!-- my css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navBar">
+      <img
+        src="./photos/logo white.png"
+        alt="Logo white by Georgina"
+        id="logo-white"
+      />
+      <ul id="menu-nav">
+        <li><a href="./index.html" class="font-nav">Accueil</a></li>
+        <li>
+          <a href="./Decouvrir.html" class="font-nav" id="accueil-menu"
+            >Découvrir le Salvador</a
+          >
+        </li>
+        <li>
+          <a href="./infos-practiques.html" class="font-nav">Infos pratiques</a>
+        </li>
+      </ul>
     </nav>
 
     <div id="banner-2-decouvrir">
-        <h2 class="h2-white titre-decouvrir"> Salvador, terre de plus de 200 volcans, découvrez ses paysages, sa culture et ses plats traditionnels</h2>
+      <h2 class="h2-white titre-decouvrir">
+        Salvador, terre de plus de 200 volcans, découvrez ses paysages, sa
+        culture et ses plats traditionnels
+      </h2>
     </div>
     <div id="banner-2-green">
-        <div id="text-slider">
+      <div id="text-slider">
         <h4 class="h4-white">Lieux à visiter</h4>
         <h4 class="h4-white">Découvrez les richesses naturelles</h4>
         <h4 class="h4-white">Explorez la culture du Salvador</h4>
-        </div>
+      </div>
     </div>
 
     <div class="card-left">
-        <div id="photo-card-plage"></div>
-        <!-- alt="Photo de Meg von Haartman sur Unsplash -->
-        <div class="card-content">
-            <h3 class="h3-green-card">Surf City</h3>
-            <div>
-                <h4 class="h4-noir">Playa El Tunco</h4>
-                <p class="font-normal">L’une des plages les plus célèbres du Salvador ! Ambiance jeune et relax, bars en bord de mer et vagues parfaites pour le surf.</p>
-                <p class="font-normal">➜ Meilleure période : Décembre à avril</p>
-                <p class="font-normal">➜ À faire : Cours de surf, balades autour des rochers volcaniques</p>
-            </div>
-            
-
-            <div>
-                <h4 class="h4-noir">Playa El Sunzal</h4>
-                <p class="font-normal">Spot emblématique du surf salvadorien, avec des vagues constantes adaptées à tous les niveaux. Très populaire chez les surfeurs et parfait pour un moment chill.</p>
-                <p class="font-normal">➜ Meilleure période : Octobre à avril
-                </p>
-                <p class="font-normal">➜ À faire : Surf, yoga, excursions en nature
-            </p>
-            </div>
-
-            <div>
-                <h4 class="h4-noir">La Libertad</h4>
-                <p class="font-normal">À seulement 35 minutes de San Salvador, cette plage offre des vagues puissantes et une vraie culture du surf. Beaucoup de restos, hôtels et activités sur place.
-                </p>
-                <p class="font-normal">➜ Meilleure période : Mars à novembre
-                </p>
-                <p class="font-normal">➜ À faire : Surf, plongée, pêche, observation de la faune
-            </p>
-            </div>
+      <div id="photo-card-plage"></div>
+      <!-- alt="Photo de Meg von Haartman sur Unsplash -->
+      <div class="card-content">
+        <h3 class="h3-green-card">Surf City</h3>
+        <div>
+          <h4 class="h4-noir">Playa El Tunco</h4>
+          <p class="font-normal">
+            L’une des plages les plus célèbres du Salvador ! Ambiance jeune et
+            relax, bars en bord de mer et vagues parfaites pour le surf.
+          </p>
+          <p class="font-normal">➜ Meilleure période : Décembre à avril</p>
+          <p class="font-normal">
+            ➜ À faire : Cours de surf, balades autour des rochers volcaniques
+          </p>
         </div>
+
+        <div>
+          <h4 class="h4-noir">Playa El Sunzal</h4>
+          <p class="font-normal">
+            Spot emblématique du surf salvadorien, avec des vagues constantes
+            adaptées à tous les niveaux. Très populaire chez les surfeurs et
+            parfait pour un moment chill.
+          </p>
+          <p class="font-normal">➜ Meilleure période : Octobre à avril</p>
+          <p class="font-normal">
+            ➜ À faire : Surf, yoga, excursions en nature
+          </p>
+        </div>
+
+        <div>
+          <h4 class="h4-noir">La Libertad</h4>
+          <p class="font-normal">
+            À seulement 35 minutes de San Salvador, cette plage offre des vagues
+            puissantes et une vraie culture du surf. Beaucoup de restos, hôtels
+            et activités sur place.
+          </p>
+          <p class="font-normal">➜ Meilleure période : Mars à novembre</p>
+          <p class="font-normal">
+            ➜ À faire : Surf, plongée, pêche, observation de la faune
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="card-right">
-        <div id="photo-card-volcan"></div>
-        <!-- alt="Photo de Georgina Cierra-->
-        <div class="card-content">
-            <h3 class="h3-green-card">Terre de volcans</h3>
-            <div>
-                <h4 class="h4-noir">Volcan de Santa Ana (Ilamatepec)</h4>
-                <p class="font-normal">Le plus haut volcan du pays ! Une randonnée accessible avec, à l’arrivée, une vue incroyable sur un lac turquoise au fond du cratère.</p>
-                <p class="font-normal">➜ Parfait pour les amateurs de nature et de photos
-                </p>
-                <p class="font-normal"> 👣 Temps de montée : 1h30 à 2h
-                </p>
-    
-            </div>
-
-            <div>
-                <h4 class="h4-noir">Volcan Izalco</h4>
-                <p class="font-normal">Surnommé "le Phare du Pacifique", il a longtemps été actif et visible depuis la mer. Son sentier de lave noire et ses paysages lunaires en font une aventure unique</p>
-                <p class="font-normal">➜ Idéal pour les aventuriers curieux
-                </p>
-                <p class="font-normal">👣 Temps de montée : 1h30</p>
-            </div>
-
-            <div>
-                <h4 class="h4-noir">Volcan San Salvador (El Boquerón)</h4>
-                <p class="font-normal">Facile d’accès depuis la capitale, ce volcan offre un énorme cratère à explorer, entouré de forêt. Il y a aussi des miradors et des petits restos typiques.
-                </p>
-                <p class="font-normal">➜ Parfait pour une sortie d’un jour depuis San Salvador.
-                </p>
-                <p class="font-normal">👣 Temps de marche : 15 à 30 minutes
-            </p>
-            </div>
+      <div id="photo-card-volcan"></div>
+      <!-- alt="Photo de Georgina Cierra-->
+      <div class="card-content">
+        <h3 class="h3-green-card">Terre de volcans</h3>
+        <div>
+          <h4 class="h4-noir">Volcan de Santa Ana (Ilamatepec)</h4>
+          <p class="font-normal">
+            Le plus haut volcan du pays ! Une randonnée accessible avec, à
+            l’arrivée, une vue incroyable sur un lac turquoise au fond du
+            cratère.
+          </p>
+          <p class="font-normal">
+            ➜ Parfait pour les amateurs de nature et de photos
+          </p>
+          <p class="font-normal">👣 Temps de montée : 1h30 à 2h</p>
         </div>
+
+        <div>
+          <h4 class="h4-noir">Volcan Izalco</h4>
+          <p class="font-normal">
+            Surnommé "le Phare du Pacifique", il a longtemps été actif et
+            visible depuis la mer. Son sentier de lave noire et ses paysages
+            lunaires en font une aventure unique
+          </p>
+          <p class="font-normal">➜ Idéal pour les aventuriers curieux</p>
+          <p class="font-normal">👣 Temps de montée : 1h30</p>
+        </div>
+
+        <div>
+          <h4 class="h4-noir">Volcan San Salvador (El Boquerón)</h4>
+          <p class="font-normal">
+            Facile d’accès depuis la capitale, ce volcan offre un énorme cratère
+            à explorer, entouré de forêt. Il y a aussi des miradors et des
+            petits restos typiques.
+          </p>
+          <p class="font-normal">
+            ➜ Parfait pour une sortie d’un jour depuis San Salvador.
+          </p>
+          <p class="font-normal">👣 Temps de marche : 15 à 30 minutes</p>
+        </div>
+      </div>
     </div>
 
     <div class="card-left">
-        <div id="photo-card-maya"></div>
-        <!-- Photo de Luis Rodriguez sur Unsplash -->
-        <div class="card-content">
-            <h3 class="h3-green-card">Le monde maya</h3>
-            <div>
-                <h4 class="h4-noir">Joya de Cerén</h4>
-                <p class="font-normal">L’une des plages les plus célèbres du Salvador ! Ambiance jeune et relax, bars en bord de mer et vagues parfaites pour le surf.</p>
-                <p class="font-normal">➜ Site classé UNESCO, parfait pour les curieux d’histoire !</p>
-            </div>
-            
-
-            <div>
-                <h4 class="h4-noir">Tazumal</h4>
-                <p class="font-normal">Le site archéologique le plus impressionnant du pays. On y voit une grande pyramide, des tombes et des objets anciens. C’est un voyage direct au cœur de la civilisation maya.</p>
-                <p class="font-normal">➜ Situé à Chalchuapa, facile à visiter en une demi-journée.
-                </p>
-            </div>
-
-            <div>
-                <h4 class="h4-noir">San Andrés</h4>
-                <p class="font-normal">Un ancien centre politique et religieux maya, entouré de paysages verts. Le musée sur place explique bien la vie maya au Salvador.
-                </p>
-                <p class="font-normal">➜  Idéal pour une visite tranquille et culturelle.
-                </p>
-            </div>
+      <div id="photo-card-maya"></div>
+      <!-- Photo de Luis Rodriguez sur Unsplash -->
+      <div class="card-content">
+        <h3 class="h3-green-card">Le monde maya</h3>
+        <div>
+          <h4 class="h4-noir">Joya de Cerén</h4>
+          <p class="font-normal">
+            L’une des plages les plus célèbres du Salvador ! Ambiance jeune et
+            relax, bars en bord de mer et vagues parfaites pour le surf.
+          </p>
+          <p class="font-normal">
+            ➜ Site classé UNESCO, parfait pour les curieux d’histoire !
+          </p>
         </div>
+
+        <div>
+          <h4 class="h4-noir">Tazumal</h4>
+          <p class="font-normal">
+            Le site archéologique le plus impressionnant du pays. On y voit une
+            grande pyramide, des tombes et des objets anciens. C’est un voyage
+            direct au cœur de la civilisation maya.
+          </p>
+          <p class="font-normal">
+            ➜ Situé à Chalchuapa, facile à visiter en une demi-journée.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="h4-noir">San Andrés</h4>
+          <p class="font-normal">
+            Un ancien centre politique et religieux maya, entouré de paysages
+            verts. Le musée sur place explique bien la vie maya au Salvador.
+          </p>
+          <p class="font-normal">
+            ➜ Idéal pour une visite tranquille et culturelle.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div id="infos-practiques">
-        <div id="sub-section1-infos">
-            <img src="./photos/search-icon 1.png" alt="search-icon-svgrepo.com" class="icon-bleu">
-            <p class="font-normal">Visa, sécurité, contacts d’urgence… Trouvez ici les infos indispensables pour votre voyage au Salvador !</p>
-        </div>
-        <div id="sub-section2-infos">
-            <a href="./infos-practiques.html" class="green-button-animated">Infos practiques</a>
-        </div>
+      <div id="sub-section1-infos">
+        <img
+          src="./photos/search-icon 1.png"
+          alt="search-icon-svgrepo.com"
+          class="icon-bleu"
+        />
+        <p class="font-normal">
+          Visa, sécurité, contacts d’urgence… Trouvez ici les infos
+          indispensables pour votre voyage au Salvador !
+        </p>
+      </div>
+      <div id="sub-section2-infos">
+        <a href="./infos-practiques.html" class="green-button-animated"
+          >Infos practiques</a
+        >
+      </div>
     </div>
 
     <footer>
-        <div id="footer-logo">
-            <img src="./photos/logo white.png" alt="White logo by Georgina" class="logo-white-footer">
-            <p class="font-normal-white-footer">Site crée par <br>
-                Georgina Cierra @2025 </p>
+      <div id="footer-logo">
+        <img
+          src="./photos/logo white.png"
+          alt="White logo by Georgina"
+          class="logo-white-footer"
+        />
+        <p class="font-normal-white-footer">
+          Site crée par <br />
+          Georgina Cierra @2025
+        </p>
+      </div>
+      <div id="footer-mentions">
+        <a href="./mentions.html" target="_blank" class="button-text"
+          >Mentions Légales</a
+        >
+        <div class="social-icons">
+          <a href="https://www.behance.net/Georginaci2784" target="_blank"
+            ><img
+              src="./photos/icon behance.png"
+              alt="Behance logo"
+              class="icon"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/georgina1998cierra/"
+            target="_blank"
+            ><img
+              src="./photos/logo linkedin.png"
+              alt="LinkedIn logo"
+              class="icon"
+          /></a>
         </div>
-        <div id="footer-mentions">
-            <a href="./mentions.html" target="_blank" class="button-text">Mentions Légales</a>
-            <div class="social-icons">
-                <a href="https://www.behance.net/Georginaci2784" target="_blank"><img src="./photos/icon behance.png" alt="Behance logo" class="icon"></a>
-            <a href="https://www.linkedin.com/in/georgina1998cierra/" target="_blank"><img src="./photos/logo linkedin.png" alt="LinkedIn logo" class="icon"></a>
-            </div>
-        </div>
+      </div>
     </footer>
-</body>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
