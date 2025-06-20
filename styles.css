@@ -320,9 +320,9 @@ a {
   color: white;
 }
 
-.font-normal-white-footer {
-  font-size: 28px;
-  margin: 15px;
+.font-white-footer {
+  font-size: 16px;
+  margin: 10px;
   color: white;
 }
 
@@ -330,6 +330,12 @@ a {
   font-size: 24px;
   font-weight: bold;
   margin: 15px;
+}
+
+.font-bold-white {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
 }
 
 .font-bold-big {
@@ -593,7 +599,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0px 30px;
 }
 
 .logo-white-footer {
@@ -603,8 +609,8 @@ footer {
 }
 
 .icon {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 #footer-logo {
@@ -615,8 +621,8 @@ footer {
 }
 
 .logo-white-footer {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 20px;
 }
 
@@ -748,12 +754,187 @@ footer {
   list-style: square;
 }
 
+/* PAGE 4 PHRASES */
+
+#bannerPhrases {
+  width: 100%;
+  height: 300px;
+  background-image: url(./photos/phrases/banner\ phrases.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#presentationPhrases {
+  padding: 30px 30px 0px 30px;
+}
+
+#boxPhrases {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 80px;
+}
+
+.flipCard {
+  height: 150px;
+  width: 320px;
+  background-color: transparent;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 1.5s ease;
+  transform-style: preserve-3d;
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipCardFront {
+  color: #ebecde;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flipCardBack {
+  background: #222601;
+  color: #ebecde;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+#chivoCard {
+  background-image: url(./photos/phrases/chivo.png);
+}
+
+#cheroCard {
+  background-image: url(./photos/phrases/chero.png);
+}
+
+#maitroCard {
+  background-image: url(./photos/phrases/maitro.png);
+}
+
+#chuchoCard {
+  background-image: url(./photos/phrases/chucho.png);
+}
+
+#saluCard {
+  background-image: url(./photos/phrases/salu.png);
+}
+
+#pistoCard {
+  background-image: url(./photos/phrases/pisto.png);
+}
+
+#cabalCard {
+  background-image: url(./photos/phrases/cabal.png);
+}
+
+#cacasoCard {
+  background-image: url(./photos/phrases/cacaso.png);
+}
+
+#bayuncoCard {
+  background-image: url(./photos/phrases/bayunco.png);
+}
+
+#bichoCard {
+  background-image: url(./photos/phrases/bicho.png);
+}
+
+#nanaCard {
+  background-image: url(./photos/phrases/nana.png);
+}
+
+#yucaCard {
+  background-image: url(./photos/phrases/yuca.png);
+}
+
+#traditions {
+  background-color: #ebf0f5;
+  width: 100%;
+  display: flex;
+  padding: 80px;
+  flex-direction: column;
+}
+
+#titleTraditions {
+  padding: 40px 30px;
+}
+
+/* dance */
+#infoSectionRight {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+/* pupusas */
+#infoSectionLeft {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  border-radius: 8px;
+}
+
+.floatingPhotoPupusas {
+  width: 400px;
+  border-radius: 8px;
+  margin-left: -30px;
+}
+
+.floatingPhotoDance {
+  width: 300px;
+  border-radius: 8px;
+  margin-top: -50px;
+}
+
+/* Responsive break points */
+
 @media only screen and (max-width: 480px) {
   /* ACCUEIL MOBILE */
   nav {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 350px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -897,9 +1078,10 @@ footer {
     color: #ffffff;
   }
 
-  .font-normal-white-footer {
+  .font-white-footer {
     font-size: 16px;
     text-align: center;
+    color: white;
   }
 
   .font-bold {
@@ -969,7 +1151,6 @@ footer {
   }
 
   /* DECOUVRIR PAGE */
-
   #banner-2-decouvrir {
     height: 400px;
   }
@@ -1071,9 +1252,70 @@ footer {
     height: 100px;
     margin-right: 0px;
   }
-}
 
-/* Print media */
+  /* PAGE 4 PHRASES */
+
+  #bannerPhrases {
+    width: 100%;
+    height: 200px;
+  }
+
+  #presentationPhrases {
+    padding: 20px;
+    width: 100%;
+  }
+
+  #traditions {
+    background-color: #ebf0f5;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #titleTraditions {
+    padding: 40px 10px;
+  }
+
+  /* dance */
+  #infoSectionRight {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+  }
+
+  /* pupusas */
+  #infoSectionLeft {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 0;
+  }
+
+  .floatingPhotoPupusas {
+    width: 250px;
+    border-radius: 8px;
+    margin-left: 0;
+  }
+
+  .floatingPhotoDance {
+    width: 250px;
+    border-radius: 8px;
+    margin-top: 0;
+  }
+}
 
 @media print {
   body * {

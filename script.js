@@ -7,6 +7,8 @@ window.addEventListener("scroll", () => {
 });
 
 const buttonP = document.querySelector("#printButton");
-buttonP.addEventListener("click", () => {
-  print();
-});
+if (buttonP) {
+  buttonP.addEventListener("click", () => {
+    print();
+  });
+}
