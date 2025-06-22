@@ -12,7 +12,7 @@ body {
 
 /* ACCUEIL */
 
-#navBar {
+.navBar {
   background-color: #222601;
   display: flex;
   flex-direction: row;
@@ -23,12 +23,9 @@ body {
   transition: all 0.2s ease-in;
 }
 
-#navMobile {
-  display: none;
-}
-
-#menuMobile {
-  display: none;
+.navBar a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .glassEffect {
@@ -46,9 +43,12 @@ body {
   color: #384001;
 }
 
-#navBar a {
-  color: #ffffff;
-  text-decoration: none;
+#navMobile {
+  display: none;
+}
+
+#menuMobile {
+  display: none;
 }
 
 #logo-white {
@@ -478,14 +478,17 @@ a {
 /* DECOUVRIR page*/
 
 #banner-2-decouvrir {
-  background-image: url(./photos/banner-2-photo.png);
+  background-image: url(./photos/PlanesDeRenderos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   align-content: center;
   padding: 40px;
   height: 300px;
 }
+/* 
+Photo de Oswaldo Martinez sur Unsplash
+Los Planes de Renderos, San Salvador, El Salvador */
 
 #banner-2-decouvrir h2 {
   animation-name: title-appear;

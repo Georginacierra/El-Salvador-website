@@ -1,8 +1,14 @@
+const navBar = document.querySelector(".navBar");
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 90) {
+    // console.log("startingGlassBar");
     navBar.classList.add("glassEffect");
+    // navBar.removeAttribute("id");
   } else {
     navBar.classList.remove("glassEffect");
+    // navBar.id = "navBar";
+    // console.log("removingGlassBar");
   }
 });
 
